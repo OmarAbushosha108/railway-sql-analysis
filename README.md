@@ -1,96 +1,74 @@
-Railway Data Analysis using SQL
+# Railway Data Analysis using SQL
 
 This project is a case study focused on analyzing railway operational data using SQL. The goal is to explore, clean, and extract meaningful insights from real-world transportation datasets.
 
-Dataset Overview
+---
+
+## Dataset Overview
 
 The analysis is based on two CSV files:
 
-railway.csv – Contains the core railway dataset with operational records.
+- **railway.csv** – Contains the core railway dataset with operational records.  
+- **railway_data_dictionary.csv** – Provides descriptions for each field in the main dataset.
 
-railway_data_dictionary.csv – Provides descriptions for each field in the main dataset.
+---
 
-Objective
+## Objective
 
-The main objective was to:
+The main objectives were to:
 
-Analyze train schedules and performance.
+- Analyze train schedules and performance  
+- Identify delays and punctuality trends  
+- Extract meaningful KPIs (Key Performance Indicators) to support decision-making
 
-Identify delays and punctuality trends.
+---
 
-Extract meaningful KPIs (Key Performance Indicators) to support decision-making.
-
-SQL Analysis
+## SQL Analysis
 
 The analysis was performed using SQL queries, focusing on:
 
-Identifying trains with the highest delays.
+- Identifying trains with the highest delays  
+- Comparing scheduled vs. actual arrival times  
+- Aggregating passenger counts and train frequencies  
+- Highlighting operational bottlenecks  
 
-Comparing scheduled vs. actual arrival times.
+---
 
-Aggregating passenger counts and train frequencies.
+## Results & Insights
 
-Highlighting operational bottlenecks.
+- Several trains demonstrated consistent delays during peak hours  
+- Certain routes exhibited high deviation between scheduled and actual arrival times  
+- Data inconsistencies were detected, requiring data cleaning steps before analysis  
 
-Example Output
+---
 
-Below is a sample SQL query with its result (query code on the left and resulting table on the right):
+## How to Use
 
-Figure: Example SQL query showing average delay (minutes) by time-of-day (Morning vs Evening).
+1. Download the dataset files and SQL script from this repository  
+2. Open the provided `.sql` file in any SQL client (e.g., SQLite, DBeaver)  
+3. Import `railway.csv` as a database table  
+4. Run the queries in the provided SQL script  
+5. Review the output tables or generate reports  
 
-Results & Insights
+---
 
-Several trains demonstrated consistent delays during peak hours (morning rush shows larger average delays in this dataset).
+## Files Included
 
-Certain routes exhibited a notable deviation between scheduled and actual arrival times, suggesting potential operational bottlenecks.
+- `railway.csv` – Main dataset  
+- `railway_data_dictionary.csv` – Column descriptions  
+- `queries.sql` – SQL queries used in the analysis  
+- `outputs/` – Contains query result snapshots (optional)  
+- `screenshots/` – Visualization of selected SQL query outputs  
 
-Data inconsistencies were detected (e.g., missing or malformed timestamps); cleaning steps were required prior to reliable analysis.
+---
 
-How to Use
+## Example Output
 
-Download the dataset files and SQL script from this repository.
+![Train Arrival Delays - SQL Query Result](screenshots/query_result_preview.png)
 
-Open the provided .sql file in any SQL client (SQLite, DBeaver, or similar).
+---
 
-Import railway.csv into a table named railway (or adjust table names in the script).
+## About
 
-Run the queries in the provided SQL script (some queries were adapted to SQLite).
-
-Check outputs/ for exported CSV results and screenshots/ for visual examples.
-
-Note: Large raw datasets are better hosted externally (e.g., Google Drive) and linked from this README if file size prevents direct inclusion in the repo.
-
-Files Included
-
-railway.csv – Main dataset.
-
-railway_data_dictionary.csv – Column descriptions.
-
-SQLQuery__Project UK Train.sql – Original SQL queries (source).
-
-sql_queries_sqlite.sql – Converted/SQLite-ready queries used for execution.
-
-outputs/ – Exported query result CSV files (e.g., query_result_longest.csv).
-
-screenshots/ – Visualizations / example query result image(s) (e.g., query_result_preview.png).
-
-README.md – This file.
-
-Reproducing the Analysis
-
-Recommended: use DB Browser for SQLite or DBeaver.
-
-Steps:
-
-Create/open a new SQLite database.
-
-Import railway.csv into a table named railway (or adjust queries to your table name).
-
-Open sql_queries_sqlite.sql and run statements sequentially.
-
-Export any result tables as CSV to outputs/ and capture visualizations as PNG into screenshots/.
-
-About
-
-This case study was created as part of a Data Analysis learning initiative.
+This case study was created as part of a Data Analysis learning initiative.  
 The project focuses on practical SQL-based data analysis and serves as a foundational step towards building a data analyst portfolio.
