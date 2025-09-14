@@ -64,7 +64,7 @@ The analysis was performed using SQL queries, focusing on:
 
 ## Example Output
 
-![Train Arrival Delays - SQL Query Result](screenshots/screenshot.png)
+![SQL Query Result](Screenshot.png)
 
 
 
